@@ -1,0 +1,18 @@
+Algorithme: MultiplicationEntiers
+Variable N : Réel // Peut-être converti en Entier si on ne considère que les entiers positifs.
+Variable i : Entier
+Variable M : Réel
+
+Début
+    Ecrire("Entrer un nombre N : ")
+    Lire(N)
+
+    M <- 1
+
+    Pour i <- 1; i <= N; i <- i + 1 Faire
+        M <- M * i
+    FinPour
+
+    Ecrire(" La multiplication de 1 a ", N, " est ", M)
+
+Fin

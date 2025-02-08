@@ -1,0 +1,21 @@
+Algorithme: CalculSommePuissancesDeDix
+Variable N : Entier
+Variable i : Entier
+Variable E : Réel
+Variable S : Réel
+
+Début
+    Ecrire("Valeur de N : ")
+    Lire(N)
+
+    E <- 1
+    S <- 0
+
+    Pour i <- 1; i <= N; i <- i + 1 Faire
+        E <- E * 10
+        S <- S + E
+    FinPour
+
+    Ecrire("la somme est ", S)
+
+Fin

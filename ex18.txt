@@ -1,0 +1,30 @@
+Algorithme: PGCD
+Variable a : Entier
+Variable b : Entier
+Variable reste : Entier
+Variable tmp : Entier
+
+Début
+    Ecrire("Entrer a =")
+    Lire(a)
+
+    Ecrire("Entrer b =")
+    Lire(b)
+
+    Si (a > b) alors
+        tmp <- a
+        a <- b
+        b <- tmp
+    FinSi
+
+    reste <- a % b
+
+    TantQue (reste != 0) Faire
+        a <- b
+        b <- reste
+        reste <- a % b
+    FinTantQue
+
+    Ecrire("PGCD = ", b)
+
+Fin

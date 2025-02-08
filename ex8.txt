@@ -1,0 +1,21 @@
+Algorithme: AfficherNombresPositifs
+Variable N : Entier
+Variable i : Entier
+
+Début
+    Ecrire("Entrer un nombre : ")
+    Lire(N)
+
+    Si (N <= 0) alors
+        Ecrire("Veuillez entrer un nombre positif")
+    Sinon
+        Pour i <- 1; i <= N; i <- i + 1 Faire
+            Si (i <= (N - 1)) alors
+                Ecrire(i, ",")
+            Sinon
+                Ecrire(i, ".")
+            FinSi
+        FinPour
+    FinSi
+
+Fin

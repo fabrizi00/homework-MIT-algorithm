@@ -1,0 +1,17 @@
+Algorithme: CalculSommeEntiers
+Variable N : Entier
+Variable i : Entier
+Variable S : Entier
+
+Début
+    Ecrire("Saisir un nombre N: ")
+    Lire(N)
+
+    S <- 0
+    Pour i <- 1; i <= N; i <- i + 1 Faire
+        S <- S + i
+    FinPour
+
+    Ecrire(S)
+
+Fin

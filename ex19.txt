@@ -1,0 +1,33 @@
+Algorithme: TestNombrePremier
+Variable N : EntierLong
+Variable n : EntierLong
+Variable i : Entier
+Variable j : Entier
+Variable estPremier : Booléen // Variable pour suivre si le nombre est premier ou pas
+
+Début
+    Pour j <- 1; j <= 2; j <- j + 1 Faire
+        Ecrire("Entrer un nombre =")
+        Lire(N)
+
+        n <- racine_carree(N) // ou sqrt(N), selon la notation du document
+        i <- 2
+        estPremier <- Vrai // On suppose au début que le nombre est premier
+
+        Si (N < 2) alors
+            Ecrire("Ce nombre n'est pas premier")
+        Sinon
+            TantQue (i <= n ET estPremier == Vrai) Faire
+                Si (N % i == 0) alors
+                    Ecrire("Ce nombre n'est pas premier")
+                    estPremier <- Faux // On a trouvé un diviseur, donc il n'est pas premier
+                FinSi
+                i <- i + 1
+            FinTantQue
+
+            Si (estPremier == Vrai) alors
+                Ecrire("Ce nombre est premier")
+            FinSi
+        FinSi
+    FinPour
+Fin

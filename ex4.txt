@@ -1,0 +1,17 @@
+Algorithme: CalculSommeMoyenne
+Variable A : Réel
+Variable B : Réel
+Variable somme : Réel
+Variable moyenne : Réel
+
+Début
+    Ecrire("Entrer deux notes :")
+    Lire(A, B)
+
+    somme <- A + B
+    moyenne <- somme / 2
+
+    Ecrire("La somme de ", A, " et ", B, " est ", somme)
+    Ecrire("Leur moyenne est ", moyenne)
+
+Fin

@@ -1,0 +1,17 @@
+Algorithme: SigneProduit
+Variable a : Réel
+Variable b : Réel
+
+Début
+    Ecrire("Entrer le premier nombre")
+    Lire(a)
+    Ecrire("Entrer le deuxieme nombre")
+    Lire(b)
+
+    Si (((a > 0) ET (b > 0)) OU ((a < 0) ET (b < 0))) alors
+        Ecrire("le produit est positif")
+    Sinon
+        Ecrire("le produit est negatif")
+    FinSi
+
+Fin

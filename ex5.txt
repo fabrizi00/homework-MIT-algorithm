@@ -1,0 +1,44 @@
+Algorithme: ResolutionEquationSecondDegre
+Variable a : Réel
+Variable b : Réel
+Variable c : Réel
+Variable delta : Réel
+Variable x1 : Réel
+Variable x2 : Réel
+
+Début
+    Ecrire("Entrer a =")
+    Lire(a)
+    Ecrire("Entrer b =")
+    Lire(b)
+    Ecrire("Entrer c =")
+    Lire(c)
+
+    Si ((a == 0) ET (b != 0)) alors
+        x1 <- -c / b
+        Ecrire("L'equation admet une racine x= ", x1)
+    Sinon Si ((a == 0) ET (b == 0)) alors
+        Si (c == 0) alors
+            Ecrire("L'equation a une infinite de solution")
+        Sinon
+            Ecrire("L'equation n'a pas de solution")
+        FinSi
+    Sinon
+        delta <- (b * b) - (4 * a * c)
+        Ecrire("delta =", delta)
+
+        Si (delta > 0) alors
+            x1 <- (-b - sqrt(delta)) / (2 * a)
+            x2 <- (-b + sqrt(delta)) / (2 * a)
+            Ecrire("L'equation admet deux solutions x1 = ", x1, " et x2 = ", x2)
+        Sinon Si (delta == 0) alors
+            x1 <- -b / (2 * a)
+            Ecrire("L'equation a une racine double x= ", x1)
+        Sinon
+            //Cas delta < 0
+            Ecrire (" l'equation admet deux solutions complexes x1 = ", -b/(2*a) , " +i", sqrt(abs(delta))/(2*a) , " et x2 = ", -b/(2*a) , " -i", sqrt(abs(delta))/(2*a))
+
+        FinSi
+    FinSi
+
+Fin

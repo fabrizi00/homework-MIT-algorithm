@@ -1,0 +1,20 @@
+Algorithme: AfficherNombresPairs
+Variable N : Entier
+Variable i : Entier
+
+Début
+    Ecrire("Entrer une valeur de N: ")
+    Lire(N)
+
+    Si (N <= 0) alors
+        Ecrire("Veuillez entrer un nombre positif")
+    Sinon
+        Pour i <- 1; i <= N; i <- i + 1 Faire
+            Si (i % 2 == 0) alors
+                Ecrire(i, " ")
+            FinSi
+        FinPour
+        Ecrire ("\n") //Saut de ligne
+    FinSi
+
+Fin

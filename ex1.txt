@@ -1,0 +1,16 @@
+Algorithme: VerificationSigneNombre
+Variable N : Réel
+
+Début
+    Ecrire("Entrer un nombre :")
+    Lire(N)
+
+    Si (N > 0) alors
+        Ecrire("Ce nombre est positif")
+    Sinon Si (N < 0) alors
+        Ecrire("Ce nombre est negatif")
+    Sinon
+        Ecrire("Zero n'est ni positif ni negatif")
+    FinSi
+
+Fin

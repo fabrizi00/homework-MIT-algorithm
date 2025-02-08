@@ -1,0 +1,27 @@
+Algorithme: TrouverMaximum
+Variable a : Réel
+Variable b : Réel
+Variable c : Réel
+Variable max : Réel
+
+Début
+    Ecrire("Entrer le premier nombre")
+    Lire(a)
+    Ecrire("Entrer le deuxieme nombre")
+    Lire(b)
+    Ecrire("Entrer le troisieme nombre")
+    Lire(c)
+
+    Si (a > b) alors
+        max <- a
+    Sinon
+        max <- b
+    FinSi
+
+    Si (max < c) alors
+        max <- c
+    FinSi
+
+    Ecrire("La valeur maximale est ", max)
+
+Fin

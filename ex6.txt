@@ -1,0 +1,19 @@
+Algorithme: CalculMoyennePonderee
+Variable note_un : Réel
+Variable note_deux : Réel
+Variable moyenne : Réel
+Variable coef_un : Réel
+Variable coef_deux : Réel
+
+Début
+    Ecrire("Entrer deux notes :")
+    Lire(note_un, note_deux)
+
+    Ecrire("Entrer les deux coefficients respectifs :")
+    Lire(coef_un, coef_deux)
+
+    moyenne <- ((note_un * coef_un) + (note_deux * coef_deux)) / (coef_un + coef_deux)
+
+    Ecrire("la moyenne est ", moyenne)
+
+Fin

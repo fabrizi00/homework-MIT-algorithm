@@ -1,0 +1,20 @@
+Algorithme: CalculSommeInverseEntiers
+Variable N : Réel // On peut le mettre à Entier si on garanti l'entrée d'un entier positif
+Variable i : Entier
+Variable S : Réel
+Variable E : Réel
+
+Début
+    Ecrire("Entrer un nombre N: ")
+    Lire(N)
+
+    S <- 0
+
+    Pour i <- 1; i <= N; i <- i + 1 Faire
+        E <- 1 / i  //Attention à la division entière si i et 1 étaient entiers
+        S <- S + E
+    FinPour
+
+    Ecrire("la somme est ", S)
+
+Fin

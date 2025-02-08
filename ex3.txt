@@ -1,0 +1,19 @@
+Algorithme: EchangeValeurs
+Variable A : Réel
+Variable B : Réel
+Variable tmp : Réel
+
+Début
+    Ecrire("Entrer la valeur de A =")
+    Lire(A)
+    Ecrire("Entrer la valeur de B =")
+    Lire(B)
+
+    tmp <- A
+    A <- B
+    B <- tmp
+
+    Ecrire("La valeur de A est ", A)
+    Ecrire("La valeur de B est ", B)
+
+Fin

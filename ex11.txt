@@ -1,0 +1,18 @@
+Algorithme: CalculFactoriel
+Variable N : Entier
+Variable i : Entier
+Variable factoriel : Réel
+
+Début
+    Ecrire("Saisir une valeur pour N:")
+    Lire(N)
+
+    factoriel <- 1
+
+    Pour i <- 1; i <= N; i <- i + 1 Faire
+        factoriel <- factoriel * i
+    FinPour
+
+    Ecrire("Le factoriel de ", N, " est ", factoriel)
+
+Fin

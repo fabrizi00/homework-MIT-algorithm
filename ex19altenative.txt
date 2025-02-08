@@ -1,0 +1,44 @@
+Algorithme: TestPremiersEntreEux
+Fonction PGCD(a : Entier, b : Entier) : Entier
+    Variable tmp : Entier
+    Variable reste : Entier
+    
+    DébutFonction
+        Si (a > b) alors
+            tmp <- a
+            a <- b
+            b <- tmp
+        FinSi
+
+        reste <- a % b
+
+        TantQue (reste != 0) Faire
+            a <- b
+            b <- reste
+            reste <- a % b
+        FinTantQue
+
+        Retourner b
+    FinFonction
+
+Variable nb1 : Entier
+Variable nb2 : Entier
+Variable resultatPGCD : Entier
+
+Début
+    Ecrire("Entrer un nombre : ")
+    Lire(nb1)
+    Ecrire("Entrer un autre nombre : ")
+    Lire(nb2)
+
+    resultatPGCD <- PGCD(nb1, nb2)
+
+    Ecrire("PGCD(", nb1, ",", nb2, ") = ", resultatPGCD)
+
+    Si (resultatPGCD == 1) alors
+        Ecrire("Ils sont premiers entre eux")
+    Sinon
+        Ecrire("Ils ne sont pas premiers entre eux")
+    FinSi
+
+Fin

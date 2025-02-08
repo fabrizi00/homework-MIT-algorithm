@@ -1,0 +1,21 @@
+Algorithme: CalculSommeInverseFactoriels
+Variable N : Entier
+Variable i : Entier
+Variable S : Réel
+Variable F : Réel
+
+Début
+    Ecrire("Donner la valeur de N:")
+    Lire(N)
+
+    S <- 0
+    F <- 1
+
+    Pour i <- 1; i <= N; i <- i + 1 Faire
+        F <- F * i
+        S <- S + (1 / F)
+    FinPour
+
+    Ecrire("La somme est ", S)
+
+Fin
